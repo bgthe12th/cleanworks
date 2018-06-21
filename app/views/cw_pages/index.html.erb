@@ -1,0 +1,59 @@
+
+
+<div class="container-fluid panel-container">
+
+  <div class="row">
+    <div class="col-xs-12 col-md-4 dash_panels">
+      <h3>Accounts</h3>
+      <h3>25</h3>
+    </div>
+
+    <div class="col-xs-12 col-md-4 dash_panels">
+      <h3>Business Growth</h3>
+      <h3>35%</h3>
+    </div>
+
+    <div class="col-xs-12 col-md-4 dash_panels">
+      <h3>Performance</h3>
+      <h3>9</h3>
+    </div>
+  </div>
+
+
+  <div class="w3-content" style="max-width:400px">
+    <div class="mySlides w3-container w3-red">
+      <h1><b>Did You Know?</b></h1>
+      <h1><i>We plan to sell trips to the moon in the 2020s</i></h1>
+    </div>
+    <div class="mySlides">
+    <%= image_tag("bigstock--155971592.jpg", class: "img-responsive") %>
+  </div>
+    <img class="mySlides" src="img_monterosso.jpg" style="width:100%">
+
+    <div class="mySlides w3-container w3-xlarge w3-white w3-card-4">
+      <p><span class="w3-tag w3-yellow">New!</span>
+      <p>6 Crystal Glasses</p>
+      <p>Only $99 !!!</p>
+    </div>
+
+    <img class="mySlides" src="img_manarola.jpg" style="width:100%">
+  </div>
+
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1}
+    x[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 8000);
+}
+</script>

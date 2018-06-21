@@ -1,0 +1,2 @@
+module CwPagesHelper
+end
