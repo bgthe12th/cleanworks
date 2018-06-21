@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Account :</strong>
+  <%= @account.account_ %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @account.name %>
+</p>
+
+<p>
+  <strong>Start date:</strong>
+  <%= @account.start_date %>
+</p>
+
+<p>
+  <strong>Gross billing:</strong>
+  <%= @account.gross_billing %>
+</p>
+
+<p>
+  <strong>Service times:</strong>
+  <%= @account.service_times %>
+</p>
+
+<p>
+  <strong>Prime contact:</strong>
+  <%= @account.prime_contact %>
+</p>
+
+<p>
+  <strong>Contact ph:</strong>
+  <%= @account.contact_ph %>
+</p>
+
+<p>
+  <strong>Contact email:</strong>
+  <%= @account.contact_email %>
+</p>
+
+<%= link_to 'Edit', edit_account_path(@account) %> |
+<%= link_to 'Back', accounts_path %>

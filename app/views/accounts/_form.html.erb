@@ -1,0 +1,57 @@
+<%= form_with(model: account, local: true) do |form| %>
+  <% if account.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(account.errors.count, "error") %> prohibited this account from being saved:</h2>
+
+      <ul>
+      <% account.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :account_ %>
+    <%= form.text_field :account_ %>
+  </div>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :start_date %>
+    <%= form.date_select :start_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gross_billing %>
+    <%= form.text_field :gross_billing %>
+  </div>
+
+  <div class="field">
+    <%= form.label :service_times %>
+    <%= form.text_field :service_times %>
+  </div>
+
+  <div class="field">
+    <%= form.label :prime_contact %>
+    <%= form.text_field :prime_contact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_ph %>
+    <%= form.text_field :contact_ph %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact_email %>
+    <%= form.text_field :contact_email %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

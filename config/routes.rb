@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :accounts
   get 'cw_pages/about'
   get 'cw_pages/contact'
   get 'cw_pages/index'
