@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :products
+  resources :incomes
+  resources :expenses
   resources :accounts
   get 'cw_pages/about'
   get 'cw_pages/contact'

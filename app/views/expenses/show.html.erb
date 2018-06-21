@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Expense name:</strong>
+  <%= @expense.expense_name %>
+</p>
+
+<p>
+  <strong>Expense date:</strong>
+  <%= @expense.expense_date %>
+</p>
+
+<p>
+  <strong>Expense amount:</strong>
+  <%= @expense.expense_amount %>
+</p>
+
+<%= link_to 'Edit', edit_expense_path(@expense) %> |
+<%= link_to 'Back', expenses_path %>
