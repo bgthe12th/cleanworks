@@ -32,8 +32,6 @@
     margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
-
-
 /* The side navigation menu */
 .sidenav {
     height: 100%; /* 100% Full-height */
@@ -95,6 +93,8 @@
 .panel-container {
   margin-left: 3%;
 }
+
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

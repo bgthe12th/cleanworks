@@ -1,12 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Accounts</h1>
-
+<div class="acct_container table-responsive">
 <table>
   <thead>
     <tr>
       <th>Account </th>
-      <th>Name</th>
       <th>Start date</th>
       <th>Gross billing</th>
       <th>Service times</th>
@@ -21,21 +20,20 @@
     <% @accounts.each do |account| %>
       <tr>
         <td><%= account.account_ %></td>
-        <td><%= account.name %></td>
         <td><%= account.start_date %></td>
         <td><%= account.gross_billing %></td>
         <td><%= account.service_times %></td>
         <td><%= account.prime_contact %></td>
         <td><%= account.contact_ph %></td>
         <td><%= account.contact_email %></td>
-        <td><%= link_to 'Show', account %></td>
-        <td><%= link_to 'Edit', edit_account_path(account) %></td>
-        <td><%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="accts_show"><%= link_to 'View', account %></td>
+        <td class="accts_show"><%= link_to 'Edit', edit_account_path(account) %></td>
+        <td class="accts_show"><%= link_to 'Delete', account, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
 </table>
-
+</div>
 <br>
 
-<%= link_to 'New Account', new_account_path %>
+<div class="accts_show"><%= link_to 'New Account', new_account_path %></div>
