@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_06_23_023826) do
+ActiveRecord::Schema.define(version: 2018_06_24_153951) do
 
   create_table "accounts", force: :cascade do |t|
     t.string "account_"
@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 2018_06_23_023826) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.decimal "price"
   end
 
 end
