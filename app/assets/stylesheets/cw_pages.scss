@@ -95,6 +95,66 @@
 }
 
 
+/*Contact*/
+.contact{
+    /*background-image:url("../images/healthy_busy.jpg");*/
+/*Add a background image*/
+    background-attachment:fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size:cover;
+/*Have the background cover the entire div section*/
+    color:#000;
+
+/*Change the color of the text on top so it is readable and adjust the padding as needed.*/
+    padding-bottom:10%;
+    margin-top:3%;
+
+}
+.clear_touch1 {
+  display:inline-block;
+  width:100%;
+  padding:8px;
+  background-color:#fab1a0;
+  border:2px solid #fff;
+  text-align:center;
+  outline:none;
+  text-decoration:none;
+  -webkit-transition:background-color 600ms;
+}
+
+.clear_touch1:hover {
+  background-color:#2C3A47;
+  color: #fff;
+}
+
+.contact-input {
+  background-color:Transparent;
+  border:2px solid #000;
+}
+
+#contact_info {
+  text-align: left;
+}
+
+#submit_message {
+  color:#fff;
+}
+
+.signup-page {
+background-image: url('lady_eat_healty_bw.jpg');
+width: 100%;
+}
+.signup-form {
+background-color: #38ada9;
+color: #fff;
+opacity: .9;
+margin: 10% 0 10% 33%;
+}
+
+.signup_button {
+width: 100%;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}

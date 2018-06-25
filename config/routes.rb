@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :expenses
   resources :accounts
   resources :orders
+  post 'cw_pages/thank_you'
   get 'cw_pages/about'
   get 'cw_pages/contact'
   get 'cw_pages/index'

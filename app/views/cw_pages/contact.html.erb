@@ -1,3 +1,75 @@
 <h1>Get in touch with us!</h1>
-<p>We're eager to hear your feedback and help you with any issues you may have
-while using Clean Works. Let us hear from you!</p>
+<p>If you experience technical issues or need support with the Clean Works app;ication, we're here to help!
+Go on and reach out to us so that we can address any concerns you may have.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Contact section-->
+<div class="container-fluid contact">
+  <!--<div class="col-md-8" id="contact">
+
+    <form id="contact_form" name="contact" onsubmit="userOutput()">
+      <div class="form-group">
+        <label for="exampleFormControlInput1" title="Required" class="glyphicon glyphicon-user"></label>
+        <input type="text" class="form-control contact-input" id="exampleFormControlInput1" required="required" placeholder="Enter Name" name="name">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1" title="Required" class="glyphicon glyphicon-envelope"></label>
+        <input type="email" required="required" class="form-control contact-input" id="exampleFormControlInput1" placeholder="Enter Email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1" title="Required" class="glyphicon glyphicon-pencil"></label>
+        <textarea class="form-control contact-input" id="comment_box" required="required" placeholder="Please enter your message here."
+         style="resize:none" cols="40" rows="5" name="text_area"></textarea>
+         <p id="char_count"></p>
+         <p id="visible-comment"></p>
+      </div>
+
+      <div class="">
+        <button class="submit-button" type="submit" id="clear_touch1" onclick="">Submit</button>
+      </div>
+      </div>
+    </form>
+  </div> -->
+<div class="col-md-8" id="contact">
+<%= flash[:notice] %>
+
+<%= form_with(url:"/cw_pages/thank_you", method: "post", local: true) do |form| %>
+<div class="row">
+  <div class="form-group">
+    <%= form.label :name, class: 'glyphicon glyphicon-user' %>
+    <%= form.text_field :name, class: "form-control glyphicon glyphicon-user", placeholder: "Enter Name" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :email, class: 'glyphicon glyphicon-envelope'%>
+    <%= form.text_field :email, class: "form-control", placeholder: "Enter Email" %>
+  </div>
+  <div class="form-group">
+    <%= form.label :message, class: 'glyphicon glyphicon-pencil'%>
+    <%= form.text_area :message, class: "form-control", placeholder: "Enter Message", rows: 5 %>
+  </div>
+
+<%= form.submit "Send", class: "clear_touch1"%>
+<% end %>
+</div>
+  <div><h2 id="submit_message"></h2></div>
+  <!--<div class="col-md-4 col-lg-4">
+    <iframe width="300" height="450" frameborder="0" style="border:0"
+     src="https://www.google.com/maps/embed/v1/view?zoom=11&center=33.0198%2C-96.6989&key=AIzaSyALLhcEhi8YgCJiiThhyajLcqQ8jzl3AHE"
+      allowfullscreen></iframe>
+  </div>-->
+</div>
+</div><!--end contact container-->
+
+<h2>Dallas, TX</h2>
+<h2>(800)555-5555</h2>
+<h2>support@cleanworks.com</h2>
