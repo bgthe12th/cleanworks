@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   resources :incomes
   resources :expenses
   resources :accounts
+  resources :orders
   get 'cw_pages/about'
   get 'cw_pages/contact'
   get 'cw_pages/index'
